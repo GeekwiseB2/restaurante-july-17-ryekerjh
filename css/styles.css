@@ -1,131 +1,61 @@
-/*FONTS*/
-@import url('https://fonts.googleapis.com/css?family=Lato:300|Lobster|Playfair+Display:900');
-
-/*HEADER styles*/
+/*Navbar Styles*/
 .navbar-inverse {
   background-color: transparent;
   border: none;
 }
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
-  background-color: rgba(51, 51, 51, .5);
+  background-color: rgba(0, 0, 0, .75);
+  text-shadow: 2px 2px 2px #000;
 }
 
 .navbar-inverse .navbar-nav>li>a {
   color: #fff;
-  text-shadow: 1px 1px 2px #333;
 }
 
 .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
-  background-color: rgba(51, 51, 51, .25);
-  color: #F8512F; /*Base Orange*/
-  
+  background-color: rgba(0, 0, 0, .25);
+  color: #F8512F; /* Base Orange */
 }
 
 /*Carousel Styles*/
 .item {
-  height: 425px;
+  height: 550px; 
   background-size: cover;
-  background-position: center;
+  background-position: center; 
 }
 
-.carousel-flex {
-  height: 425px;/*or 100%*/
-  display: flex;
-  align-items: center;
-}
-
-#wood-background {
+#wood-bg {
   background-image: url('../img/wood-2.jpg');
 }
 
 #carousel-logo {
-  height: 250px;
+  height: 200px;
 }
 
-#seating-background {
+.flex-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#seating-bg {
   background-image: url('../img/restaurant-2.jpg');
 }
 
-#farm-background {
+#farm-bg {
   background-image: url('../img/farm-2.jpg');
 }
 
 .carousel-caption {
-  margin-bottom: 45px;  
+  padding-bottom: 10em;
 }
 
-button.btn-warning {
+.btn-warning {
   background-color: #F8512F;
-  border-color: #F8512F;
+  border: none;
 }
 
-button.btn-warning:hover {
+.btn-warning:hover {
   background-color: #D34326;
-  border-color: #D34326
-}
-
-/*Our Story Styles*/
-.lobster-text {
-  font-family: 'Lobster', cursive;
-}
-
-#our-story {
-  margin: 10% auto;
-}
-
-#our-story .lobster-text {
-  color: #F8512F;
-  text-shadow: 1px 1px 2px #313;
-  font-size: 5em;
-}
-
-#our-story h3 {
-  margin-top: 0px;
-}
-
-.year-text {
-  font-family: 'Playfair Display', serif;
-  font-weight: 900;
-  position: absolute;
-  z-index: 0;
-  color: rgba(51, 51, 51, .1);
-  font-size: 170px;
-}
-
-/*Review Styles*/
-
-#review {
-  background-image: url('../img/food_review.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  height: 450px;
-}
-
-.flex {
-  display: flex;
-  align-items: center;
-  height: 450px;
-}
-
-.fresno-bee {
-  background-color: rgba(0, 0, 0, .5);
-  border-radius: 5px;
-}
-
-.fresno-bee h1 {
-  font-family: 'Lobster', cursive;
-  color: #F8512F;
-  text-shadow: 1px 1px 2px #333;
-  font-size: 60px;
-}
-
-.fresno-bee p {
-  color: #fff;
-  font-size: 26px;
-  line-height: 36px;
-  font-family: 'Lato', sans-serif;
-  text-shadow: 1px 1px 2px #333;
-  font-weight: 300;
 }
